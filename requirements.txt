@@ -1,0 +1,4 @@
+streamlit
+crewai
+mysql-connector-python
+python-dotenv
