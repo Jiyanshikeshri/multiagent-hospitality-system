@@ -13,7 +13,7 @@ def create_new_session():
     title = "New Chat"
 
     query = "INSERT INTO sessions (id, title) VALUES (%s, %s)"
-    cursor.execute(query, (session_id, title))
+    cursor.execute(query, (session_id,title))
     conn.commit()
 
     cursor.close()
@@ -39,16 +39,16 @@ def get_all_sessions():
 # CHAT MEMORY
 # -----------------------------
 
-def save_memory(session_id, message, role):
+def save_memory(session_id, content, role):
     conn = get_connection()
     cursor = conn.cursor()
 
     query = """
-    INSERT INTO chat_memory (session_id, role, message)
+    INSERT INTO chat_memory (session_id, role, content)
     VALUES (%s, %s, %s)
     """
 
-    cursor.execute(query, (session_id, role, message))
+    cursor.execute(query, (session_id, role, content))
     conn.commit()
 
     cursor.close()
@@ -60,7 +60,7 @@ def load_memory(session_id):
     cursor = conn.cursor()
 
     query = """
-    SELECT role, message 
+    SELECT role, content 
     FROM chat_memory 
     WHERE session_id = %s 
     ORDER BY id ASC

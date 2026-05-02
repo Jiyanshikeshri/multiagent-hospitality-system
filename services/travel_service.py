@@ -11,7 +11,7 @@ def generate_travel_plan(user_query):
 
     query_lower = user_query.lower()
 
-    # 🔹 Detect query type
+    #  Detect query type
     if "hotel" in query_lower:
         agent = create_hotel_agent()
         task = create_hotel_task(agent, user_query)

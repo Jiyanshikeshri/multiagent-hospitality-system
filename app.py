@@ -25,7 +25,7 @@ if "active_session" not in st.session_state:
 # -----------------------------
 st.sidebar.title("💬 Conversations")
 
-# ➕ New Chat Button
+# New Chat Button
 if st.sidebar.button("➕ New Chat"):
     st.session_state.active_session = create_new_session()
     st.rerun()
@@ -79,7 +79,7 @@ Assistant:
     # Generate AI response
     ai_response = generate_travel_plan(full_prompt)
 
-    # 🔥 Auto-update title if first message
+    # Auto-update title if first message
     if len(chat_history) == 0:
         update_session_title(
             st.session_state.active_session,

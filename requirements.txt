@@ -1,4 +1,6 @@
 streamlit
 crewai
+litellm
 mysql-connector-python
 python-dotenv
+fpdf

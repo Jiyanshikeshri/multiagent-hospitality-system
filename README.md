@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Travel Planner (Multi-Agent Conversational System)
 
 An intelligent multi-agent AI Travel Planning system built using:
@@ -101,3 +102,7 @@ venv\Scripts\activate
 ### Install Dependencies
 
 pip install -r requirements.txt
+=======
+# multiagent-hospitality-system
+An intelligent multi-agent system designed to automate and optimize hospitality operations like booking, customer support, and service coordination.
+>>>>>>> a3b8e53a327f332b0803dbda151e652793e93aca

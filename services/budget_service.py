@@ -4,10 +4,10 @@ from tasks.budget_task import create_budget_task
 
 def validate_budget(full_plan_text):
 
-    # ✅ Create agent instance
+    # Create agent instance
     budget_agent = create_budget_agent()
 
-    # ✅ Pass correct object
+    # Pass correct object
     budget_task = create_budget_task(budget_agent, full_plan_text)
 
     crew = Crew(
