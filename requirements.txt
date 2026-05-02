@@ -1,6 +1,6 @@
 streamlit
-crewai==0.28.8
-litellm==1.35.0
+crewai
+litellm
 mysql-connector-python
 python-dotenv
 fpdf
